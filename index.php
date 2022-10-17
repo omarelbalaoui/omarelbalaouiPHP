@@ -1,7 +1,5 @@
 <?php
 
-$greeting = 'Hola mon!';
-
-//echo $greeting;
+require 'app/index.php';
 
 require 'resources/views/index.blade.php';
