@@ -10,7 +10,8 @@ require 'app/Task.php';
 $user = 'debian-sys-maint';
 $pass = 'wuJIaatbRv5k4t4T';
 
-$dbh = new PDO('mysql:localhost;dbname=phplaravelomar', $user, $pass);
+
+$dbh = new PDO('mysql:host=localhost;dbname=phplaravelomar', $user, $pass);
 
 $statement = $dbh->prepare('SELECT * FROM tasks;');
 
@@ -18,7 +19,7 @@ $statement->execute();
 
 $tasks = $statement->fetchAll(PDO::FETCH_OBJ);
 
-var_dump($tasks);
+
 
 
 $greeting = greet();
