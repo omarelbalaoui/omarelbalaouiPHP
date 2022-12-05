@@ -13,3 +13,14 @@ function dd($xivato)
     var_dump($xivato);
     die();
 }
+
+function connectDB($config){
+    try {
+        return new PDO(
+            $config['database']['type'] . ':host=' . $config['database']['host'] . ';dbname=' . $config['database']['name'],
+            $config['database']['user'],
+            $config['database']['password']);
+    } catch (\Exception $e) {
+        echo "Error de connexió";
+    }
+}
