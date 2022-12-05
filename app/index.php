@@ -6,6 +6,15 @@ require 'app/helpers.php';
 
 require 'app/Task.php';
 
-$tasks = fetchAllTasks(connectDB($config));
+require 'framework/Database.php';
+
+
+
+
+
+//$database = new Database();
+//$task = $database->selectAll('tasks');
+$tasks = Database :: selectAll('tasks');
+//$tasks = task::selectAll('task');
 
 $greeting = greet();
