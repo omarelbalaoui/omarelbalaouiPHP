@@ -1,0 +1,17 @@
+{
+    "name": "omar/php_omar",
+    "description": "asdasd",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "authors": [
+        {
+            "name": "omarelbalaoui",
+            "email": "omarelbalaoui@iesebre.com"
+        }
+    ],
+    "require": {}
+}
